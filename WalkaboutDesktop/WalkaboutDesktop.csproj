@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>WalkaboutDesktop</AssemblyName>
+    <RootNamespace>WalkaboutDesktop</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>disable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <!-- Game install. Override with: dotnet build -p:GameDir=... -->
+    <!-- the game folder: pass -p:GameDir=..., or set the environment variable WALKABOUT_GAME -->
+    <GameDir Condition="'$(GameDir)' == ''">$(WALKABOUT_GAME)</GameDir>
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Walkabout Mini Golf</GameDir>
+    <PluginDir>$(GameDir)\BepInEx\plugins\WalkaboutDesktop</PluginDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(GameDir)\BepInEx\core\BepInEx.Core.dll" Private="false" />
+    <Reference Include="$(GameDir)\BepInEx\core\BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="$(GameDir)\BepInEx\core\BepInEx.Unity.Common.dll" Private="false" />
+    <Reference Include="$(GameDir)\BepInEx\core\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="$(GameDir)\BepInEx\core\Il2CppInterop.Common.dll" Private="false" />
+    <!-- All generated game/Unity wrappers -->
+    <Reference Include="$(GameDir)\BepInEx\interop\*.dll" Private="false" />
+  </ItemGroup>
+
+  <!-- Copy the built plugin into the game. Fails harmlessly-loud if the game is running (file locked). -->
+  <ItemGroup>
+    <LaneFiles Include="..\lanes\*.json;..\lanes\*.obj" />
+  </ItemGroup>
+
+  <!-- Lanes first (hot-reloadable while the game runs), then the DLL (locked while the game runs). -->
+  <Target Name="DeployToGame" AfterTargets="Build">
+    <MakeDir Directories="$(PluginDir)\lanes" />
+    <Copy SourceFiles="@(LaneFiles)" DestinationFolder="$(PluginDir)\lanes" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PluginDir)" ContinueOnError="WarnAndContinue" Retries="0" />
+    <Message Importance="high" Text="Deployed to $(PluginDir)" />
+  </Target>
+
+</Project>

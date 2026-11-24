@@ -1,0 +1,150 @@
+// Eternit lane 10 - Stäbe.
+// OFFICIAL (NormMiniatur 01/2026): bars 40 cm long from the Bande; bar ends at 180-210, 300-380, 450-480 cm (using 195,
+//   340, 465); sides alternate, at least one per side.
+// STATED (DMV beginner booklet): "40 cm lang"; metal or stone, width varies.
+// FROM PHOTOS (Neuwied, Harrislee - estimates): square-ish bars about 5 cm wide and 4-5 cm high.
+// Ablegelinien (painted repositioning lines): from the norm drawing, 20 cm from the Banden and 20/30 cm from the obstacles.
+{
+ "name": "Eternit 10 Staebe",
+ "system": "Eternit",
+ "length": 6.25,
+ "width": 0.9,
+ "targetCircle": 1.4,
+ "tee": [0, 0.2],
+ "cup": [0, 5.55],
+ "parts": [
+  {
+   "name": "Bar1_L",
+   "shape": "box",
+   "pos": [-0.25, 0.0225, 1.925],
+   "size": [0.4, 0.045, 0.05],
+   "tag": "Metal",
+   "color": [0.62, 0.63, 0.65]
+  },
+  {
+   "name": "Bar2_R",
+   "shape": "box",
+   "pos": [0.25, 0.0225, 3.375],
+   "size": [0.4, 0.045, 0.05],
+   "tag": "Metal",
+   "color": [0.62, 0.63, 0.65]
+  },
+  {
+   "name": "Bar3_L",
+   "shape": "box",
+   "pos": [-0.25, 0.0225, 4.625],
+   "size": [0.4, 0.045, 0.05],
+   "tag": "Metal",
+   "color": [0.62, 0.63, 0.65]
+  },
+  {
+   "name": "Grenzlinie",
+   "shape": "line",
+   "points": [
+    [-0.45, 1.95],
+    [0.45, 1.95]
+   ],
+   "thickness": 0.01,
+   "color": [0.8, 0.08, 0.08]
+  },
+  {
+   "name": "Hilfslinie_2",
+   "shape": "line",
+   "points": [
+    [-0.45, 3.4],
+    [0.45, 3.4]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  },
+  {
+   "name": "Hilfslinie_3",
+   "shape": "line",
+   "points": [
+    [-0.45, 4.65],
+    [0.45, 4.65]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  },
+  {
+   "name": "Ablegelinie_1",
+   "shape": "line",
+   "points": [
+    [-0.25, 2.25],
+    [-0.25, 3.15],
+    [0.25, 3.15],
+    [0.25, 2.25],
+    [-0.25, 2.25]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  },
+  {
+   "name": "Ablegelinie_2",
+   "shape": "line",
+   "points": [
+    [-0.25, 3.7],
+    [-0.25, 4.4],
+    [0.25, 4.4],
+    [0.25, 3.7],
+    [-0.25, 3.7]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  },
+  {
+   "name": "Ablegelinie_3",
+   "shape": "line",
+   "points": [
+    [-0.25, 5.117],
+    [-0.25, 4.95],
+    [0.25, 4.95],
+    [0.25, 5.117],
+    [0.304, 5.153],
+    [0.354, 5.196],
+    [0.397, 5.246],
+    [0.433, 5.3],
+    [0.462, 5.359],
+    [0.483, 5.421],
+    [0.496, 5.485],
+    [0.5, 5.55],
+    [0.496, 5.615],
+    [0.483, 5.679],
+    [0.462, 5.741],
+    [0.433, 5.8],
+    [0.397, 5.854],
+    [0.354, 5.904],
+    [0.304, 5.947],
+    [0.25, 5.983],
+    [0.191, 6.012],
+    [0.129, 6.033],
+    [0.065, 6.046],
+    [-0.0, 6.05],
+    [-0.065, 6.046],
+    [-0.129, 6.033],
+    [-0.191, 6.012],
+    [-0.25, 5.983],
+    [-0.304, 5.947],
+    [-0.354, 5.904],
+    [-0.397, 5.854],
+    [-0.433, 5.8],
+    [-0.462, 5.741],
+    [-0.483, 5.679],
+    [-0.496, 5.615],
+    [-0.5, 5.55],
+    [-0.496, 5.485],
+    [-0.483, 5.421],
+    [-0.462, 5.359],
+    [-0.433, 5.3],
+    [-0.397, 5.246],
+    [-0.354, 5.196],
+    [-0.304, 5.153],
+    [-0.25, 5.117]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  }
+ ],
+ "circleLine": false
+}

@@ -1,0 +1,317 @@
+// Eternit lane 11 - Labyrinth. All walls traced from the official drawing (NormMiniatur S 12, Bahn 11), rendered from
+// the PDF at 10x and scaled with the 90 cm lane width (1 px = 1.24 mm, so about +-1 cm). Lane +x = the player's right.
+// OFFICIAL: the lane rises from 60-100 cm behind the lane start (using 80) to the lane end; entrances 12-20 cm wide;
+//   with four entrances only the 2nd from the right leads to the target, the others must not lead to it. The black bars in
+//   the drawing are flat strips across the tops of the walls, not blocks - all four entrances are open underneath; target = the area between the parallel walls in the centre, with or without a hole; no Grenzlinie.
+// FROM THE DRAWING: wings from the Banden; an outer ring (r about 62 cm) with a small wedge at the back; a pear-shaped
+//   middle ring (r about 43 cm) that carries a short lip at the back; a pear-shaped inner loop (r about 23 cm) that is
+//   open at the back for 7 cm; behind that opening the target pocket, closed towards the tee (7.5 cm wide in the
+//   drawing; built 14 cm wide with a hole, see FROM PHOTOS).
+// Thin bracing rods across the wall tops as in the drawing and the Neuwied photo (the ball passes underneath).
+// ESTIMATES: wall height 10 cm (side view of the drawing and photos, +-25 %); lane end 40 cm above the tee (side view
+//   and photos, +-25 %).
+// FROM PHOTOS (Uppsala, Rothe insert, DMV booklet): the target is a U-shaped pocket about one and a half hole
+//   diameters wide with a hole (the norm allows it with or without hole; its drawing shows a 7.5 cm box); flat strips
+//   lie across the tops of the entrance walls and brace the rings; walls about 10 cm high.
+// The lip of the middle ring is carried on to the inner loop (as in the Uppsala, Rothe and minigolfbau photos), so a ball
+//   from the second entrance from the left cannot reach the target; the opening of the inner loop is about 9 cm (drawing).
+{
+ "name": "Eternit 11 Labyrinth",
+ "system": "Eternit",
+ "length": 6.25,
+ "width": 0.9,
+ "targetCircle": 1.4,
+ "tee": [0, 0.2],
+ "cup": [0.006, 5.6],
+ "obstacleColor": [0.55, 0.57, 0.6],
+ "surface": [
+  {
+   "type": "slope",
+   "z0": 0.8,
+   "z1": 6.25,
+   "height": 0.4
+  }
+ ],
+ "parts": [
+  {
+   "name": "Wing_L",
+   "shape": "wall",
+   "points": [
+    [-0.443, 4.784],
+    [-0.344, 4.853],
+    [-0.344, 4.952],
+    [-0.356, 5.042]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "Wing_R",
+   "shape": "wall",
+   "points": [
+    [0.443, 4.784],
+    [0.351, 4.853],
+    [0.351, 4.952],
+    [0.356, 5.042]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "RingA",
+   "shape": "arc",
+   "center": [0, 5.55],
+   "radius": 0.62,
+   "from": -55,
+   "to": 235,
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "RingA_Wedge",
+   "shape": "wall",
+   "points": [
+    [-0.065, 6.165],
+    [-0.027, 6.118],
+    [0.01, 6.165]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "RingB_L",
+   "shape": "wall",
+   "points": [
+    [-0.189, 4.856],
+    [-0.189, 4.952],
+    [-0.1948, 4.98],
+    [-0.2029, 5.0202],
+    [-0.2133, 5.065],
+    [-0.226, 5.107],
+    [-0.2413, 5.1447],
+    [-0.2591, 5.1819],
+    [-0.2788, 5.2189],
+    [-0.3, 5.256],
+    [-0.3249, 5.2933],
+    [-0.3529, 5.3308],
+    [-0.3795, 5.368],
+    [-0.4, 5.405],
+    [-0.4125, 5.4449],
+    [-0.4198, 5.4868],
+    [-0.4239, 5.524],
+    [-0.427, 5.55]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "RingB_R",
+   "shape": "wall",
+   "points": [
+    [0.196, 4.856],
+    [0.196, 4.952],
+    [0.2015, 4.98],
+    [0.2091, 5.0202],
+    [0.2194, 5.065],
+    [0.233, 5.107],
+    [0.2512, 5.1447],
+    [0.2734, 5.1819],
+    [0.2971, 5.2189],
+    [0.32, 5.256],
+    [0.3433, 5.2933],
+    [0.3677, 5.3308],
+    [0.39, 5.368],
+    [0.407, 5.405],
+    [0.4172, 5.4449],
+    [0.4224, 5.4868],
+    [0.425, 5.524],
+    [0.427, 5.55]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "RingB_Back",
+   "shape": "arc",
+   "center": [0, 5.55],
+   "radius": 0.427,
+   "from": 0,
+   "to": 180,
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "RingB_Lip",
+   "shape": "wall",
+   "points": [
+    [-0.065, 5.972],
+    [-0.045, 5.91],
+    [-0.031, 5.876],
+    [-0.036, 5.82],
+    [-0.04, 5.777]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "RingB_Hook",
+   "shape": "wall",
+   "points": [
+    [0.035, 5.975],
+    [0.016, 5.945]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "LoopC_L",
+   "shape": "wall",
+   "points": [
+    [0.0, 4.952],
+    [-0.0061, 4.9917],
+    [-0.0146, 5.0489],
+    [-0.0258, 5.1118],
+    [-0.04, 5.169],
+    [-0.0585, 5.2191],
+    [-0.0806, 5.2678],
+    [-0.1042, 5.3136],
+    [-0.127, 5.355],
+    [-0.1502, 5.3916],
+    [-0.1744, 5.4242],
+    [-0.1964, 5.4532],
+    [-0.213, 5.479],
+    [-0.2225, 5.5021],
+    [-0.2269, 5.5223],
+    [-0.2286, 5.5385],
+    [-0.23, 5.55]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "LoopC_R",
+   "shape": "wall",
+   "points": [
+    [0.0, 4.952],
+    [0.0075, 4.9917],
+    [0.0181, 5.0489],
+    [0.0313, 5.1118],
+    [0.047, 5.169],
+    [0.0662, 5.2191],
+    [0.0888, 5.2678],
+    [0.1122, 5.3136],
+    [0.134, 5.355],
+    [0.1546, 5.3916],
+    [0.1751, 5.4242],
+    [0.1935, 5.4532],
+    [0.208, 5.479],
+    [0.2177, 5.5021],
+    [0.2236, 5.5223],
+    [0.2273, 5.5385],
+    [0.23, 5.55]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "LoopC_Back_L",
+   "shape": "arc",
+   "center": [0, 5.55],
+   "radius": 0.23,
+   "from": 100,
+   "to": 180,
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "LoopC_Back_R",
+   "shape": "arc",
+   "center": [0, 5.55],
+   "radius": 0.23,
+   "from": 0,
+   "to": 78,
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "Target",
+   "shape": "wall",
+   "points": [
+    [-0.064, 5.783],
+    [-0.064, 5.545],
+    [-0.04, 5.515],
+    [0.052, 5.515],
+    [0.076, 5.545],
+    [0.076, 5.783]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "LoopC_Tip",
+   "shape": "wall",
+   "points": [
+    [0, 4.825],
+    [0, 4.952]
+   ],
+   "height": 0.1,
+   "thickness": 0.01
+  },
+  {
+   "name": "Bar_Left",
+   "shape": "wall",
+   "points": [
+    [-0.349, 4.9],
+    [0.005, 4.9]
+   ],
+   "height": 0.006,
+   "thickness": 0.09,
+   "baseY": 0.1
+  },
+  {
+   "name": "Bar_Right",
+   "shape": "wall",
+   "points": [
+    [0.191, 4.9],
+    [0.356, 4.9]
+   ],
+   "height": 0.006,
+   "thickness": 0.09,
+   "baseY": 0.1
+  },
+  {
+   "name": "Brace_Cross",
+   "shape": "wall",
+   "points": [
+    [-0.62, 5.55],
+    [0.62, 5.55]
+   ],
+   "height": 0.006,
+   "thickness": 0.012,
+   "baseY": 0.1
+  },
+  {
+   "name": "Brace_Diag1",
+   "shape": "wall",
+   "points": [
+    [-0.438, 5.112],
+    [0.438, 5.988]
+   ],
+   "height": 0.006,
+   "thickness": 0.012,
+   "baseY": 0.1
+  },
+  {
+   "name": "Brace_Diag2",
+   "shape": "wall",
+   "points": [
+    [0.438, 5.112],
+    [-0.438, 5.988]
+   ],
+   "height": 0.006,
+   "thickness": 0.012,
+   "baseY": 0.1
+  }
+ ],
+ "circleLine": false
+}

@@ -1,0 +1,15 @@
+// Pipeline test lane - NOT a standard lane. Uses Eternit base dimensions plus two test obstacles.
+{
+  "name": "Test flat",
+  "system": "test",
+  "length": 6.25,
+  "width": 0.9,
+  "bandHeight": 0.06,
+  "bandThickness": 0.04,
+  "tee": [0, 0.2],
+  "cup": [0, 5.55],
+  "parts": [
+    { "name": "Block", "shape": "box", "pos": [0.25, 0.03, 3.0], "size": [0.2, 0.06, 0.2], "tag": "Plastic", "color": [0.8, 0.3, 0.2] },
+    { "name": "Post", "shape": "cylinder", "pos": [-0.25, 0.05, 2.0], "size": [0.08, 0.1], "tag": "Metal", "color": [0.3, 0.3, 0.35] }
+  ]
+}

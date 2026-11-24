@@ -1,0 +1,46 @@
+// Eternit lane 4 - Doppelwellen.
+// OFFICIAL (NormMiniatur 01/2026): two waves; Grenzlinie behind the crest of the 2nd wave. No dimensions.
+// MEASURED FROM THE NORM DRAWING (scaled): crests at about 2.2 m and 4.1 m.
+// FROM PHOTOS (true side view at Solna; Uppsala, Springe - estimates): plates bent into two sine-like humps, crests
+//   about 30 cm (+-4) high, the trough between them stays 4-5 cm above the lane, flat tee section about 1.4 m.
+{
+ "name": "Eternit 04 Doppelwellen",
+ "system": "Eternit",
+ "length": 6.25,
+ "width": 0.9,
+ "targetCircle": 1.4,
+ "tee": [0, 0.2],
+ "cup": [0, 5.55],
+ "surface": [
+  {
+   "type": "hump",
+   "z0": 1.25,
+   "z1": 3.15,
+   "height": 0.3
+  },
+  {
+   "type": "hump",
+   "z0": 3.15,
+   "z1": 5.0,
+   "height": 0.3
+  },
+  {
+   "type": "hump",
+   "z0": 2.25,
+   "z1": 4.05,
+   "height": 0.045
+  }
+ ],
+ "parts": [
+  {
+   "name": "Grenzlinie",
+   "shape": "line",
+   "points": [
+    [-0.45, 4.13],
+    [0.45, 4.13]
+   ],
+   "thickness": 0.01,
+   "color": [0.8, 0.08, 0.08]
+  }
+ ]
+}

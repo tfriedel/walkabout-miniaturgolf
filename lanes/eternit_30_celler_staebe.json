@@ -1,0 +1,16 @@
+// Eternit lane 30 - Celler Stäbe. Source: NormMiniatur 01/2026.
+// Official: row 1 at 200-240 cm (using 220) with 3 gates of 8-12 cm (using 10, left = right);
+//           row 2 at 460-480 cm (using 470) with 2 gates of 15-25 cm (using 20, equal).
+// From the drawing: the gates lie between the Banden and thin bars across the lane.
+// Row 1: gate 0.10 | bar 0.30 | gate 0.10 | bar 0.30 | gate 0.10. Row 2: gate 0.20 | bar 0.50 | gate 0.20.
+// Estimates: bars 3 cm thick, 6 cm high.
+{
+  "name": "Eternit 30 Celler Staebe", "system": "Eternit",
+  "length": 6.25, "width": 0.90, "targetCircle": 1.40,
+  "tee": [0, 0.20], "cup": [0, 5.55],
+  "parts": [
+    { "name": "R1_Bar1", "shape": "box", "pos": [-0.20, 0.03, 2.20], "size": [0.30, 0.06, 0.03], "tag": "Metal", "color": [0.35, 0.35, 0.40] },
+    { "name": "R1_Bar2", "shape": "box", "pos": [0.20, 0.03, 2.20], "size": [0.30, 0.06, 0.03], "tag": "Metal", "color": [0.35, 0.35, 0.40] },
+    { "name": "R2_Bar", "shape": "box", "pos": [0, 0.03, 4.70], "size": [0.50, 0.06, 0.03], "tag": "Metal", "color": [0.35, 0.35, 0.40] }
+  ]
+}

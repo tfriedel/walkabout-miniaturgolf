@@ -1,0 +1,72 @@
+// Eternit lane 15 - Mittelhügel (Variante 2: the hill is wider than the lane).
+// OFFICIAL (NormMiniatur 01/2026): hill in the middle of the lane with the hole on it; plain rectangular lane end
+//   (no target circle); Grenzlinie 50 cm behind the tee area; no dimensions given for the hill.
+// MEASURED FROM THE NORM DRAWING (scaled, +-4 cm): hill 105 cm long, centred 3.20 m from the lane start, round sides
+//   bulging 25 cm past each Bande = a circle of about 1.35 m diameter.
+// FROM PHOTOS (Rothe part, Dreieichenhain, Harrislee - estimates): crest 8-15 cm (using 10), hole on the crest.
+//   Shape: a segment of a cylinder lying across the lane (curved along the lane, level across) - corrected by the
+//   user, I had first built a round dome.
+//   The DMV beginner booklet says the height "kann sehr unterschiedlich ausfallen".
+// Ablegelinien (painted repositioning lines): from the norm drawing, 20 cm from the Banden and 20/30 cm from the obstacles.
+{
+ "name": "Eternit 15 Mittelhuegel",
+ "system": "Eternit",
+ "length": 6.25,
+ "width": 0.9,
+ "targetCircle": 0,
+ "grid": 0.02,
+ "outline": [
+  [-0.45, 0],
+  [0.45, 0],
+  [0.45, 6.25],
+  [-0.45, 6.25]
+ ],
+ "circle": [0, 3.2, 1.35],
+ "tee": [0, 0.2],
+ "cup": [0, 3.2],
+ "surface": [
+  {
+   "type": "barrel",
+   "z0": 2.675,
+   "z1": 3.725,
+   "height": 0.1
+  }
+ ],
+ "parts": [
+  {
+   "name": "Grenzlinie",
+   "shape": "line",
+   "points": [
+    [-0.45, 0.9],
+    [0.45, 0.9]
+   ],
+   "thickness": 0.01,
+   "color": [0.8, 0.08, 0.08]
+  },
+  {
+   "name": "Ablegelinie_1",
+   "shape": "line",
+   "points": [
+    [-0.25, 0.9],
+    [-0.25, 2.47],
+    [0.25, 2.47],
+    [0.25, 0.9]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  },
+  {
+   "name": "Ablegelinie_2",
+   "shape": "line",
+   "points": [
+    [-0.25, 3.93],
+    [-0.25, 5.95],
+    [0.25, 5.95],
+    [0.25, 3.93],
+    [-0.25, 3.93]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  }
+ ]
+}

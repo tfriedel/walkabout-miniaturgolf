@@ -1,0 +1,16 @@
+// Eternit lane 27 - Raute.
+// OFFICIAL (NormMiniatur 01/2026): widest point 250-350 cm from the lane start (using 300); side passages 10-15 cm
+//   (using 12.5); Grenzlinien (painted) from the widest points to the Banden.
+// MEASURED FROM THE NORM DRAWING (rendered 4x): kite shape, 44 cm from the front tip to the widest point, 59 cm from
+//   there to the back tip.
+// FROM PHOTOS (minigolfbau.eu - estimate): hollow frame of upright flat steel about 4-5 cm high.
+{
+  "name": "Eternit 27 Raute", "system": "Eternit",
+  "length": 6.25, "width": 0.90, "targetCircle": 1.40,
+  "tee": [0, 0.20], "cup": [0, 5.55],
+  "parts": [
+    { "name": "Raute", "shape": "wall", "points": [[0, 2.565], [-0.325, 3.00], [0, 3.587], [0.325, 3.00], [0, 2.565]], "height": 0.045, "thickness": 0.008, "color": [0.30, 0.80, 0.20] },
+    { "name": "Grenzlinie_L", "shape": "line", "points": [[-0.45, 3.00], [-0.325, 3.00]], "thickness": 0.01, "color": [0.80, 0.08, 0.08] },
+    { "name": "Grenzlinie_R", "shape": "line", "points": [[0.325, 3.00], [0.45, 3.00]], "thickness": 0.01, "color": [0.80, 0.08, 0.08] }
+  ]
+}

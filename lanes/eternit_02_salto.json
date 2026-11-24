@@ -1,0 +1,139 @@
+// Eternit lane 2 - Salto.
+// OFFICIAL (NormMiniatur 01/2026): obstacle starts 200-300 cm from the lane start; passage 15-22 cm wide (using 17);
+//   Grenzlinie across the end of the exit channel.
+// MEASURED FROM THE NORM DRAWING (scaled, +-3 cm): two bars run from the Banden (at 221 cm) to the entry mouth (235 cm);
+//   entry channel centred 10 cm right of the lane centre, exit channel directly beside it on the left (7 cm left of the
+//   centre); loop centred at 282 cm; exit channel ends at 329 cm.
+// FROM PHOTOS (minigolfbau.eu, Vorsfelde - estimates): ring about 55-60 cm in diameter (using radius 28 cm), bars and
+//   channel walls of about Bande height (using 4.5 cm).
+// Ablegelinien (painted repositioning lines): from the norm drawing, 20 cm from the Banden and 20/30 cm from the obstacles.
+// The sheet-metal tongues under the entry and exit channels (photos) are painted on only: a real sheet edge of 2-3 mm
+//   is not modelled.
+{
+ "name": "Eternit 02 Salto",
+ "system": "Eternit",
+ "length": 6.25,
+ "width": 0.9,
+ "targetCircle": 1.4,
+ "tee": [0, 0.2],
+ "cup": [0, 5.55],
+ "parts": [
+  {
+   "name": "Bar_Left",
+   "shape": "wall",
+   "points": [
+    [-0.45, 2.21],
+    [0.015, 2.35]
+   ],
+   "height": 0.045,
+   "thickness": 0.01,
+   "color": [0.15, 0.25, 0.65]
+  },
+  {
+   "name": "Bar_Right",
+   "shape": "wall",
+   "points": [
+    [0.45, 2.21],
+    [0.185, 2.35]
+   ],
+   "height": 0.045,
+   "thickness": 0.01,
+   "color": [0.15, 0.25, 0.65]
+  },
+  {
+   "name": "Tongue_In",
+   "shape": "line",
+   "points": [
+    [0.1, 2.35],
+    [0.1, 2.82]
+   ],
+   "thickness": 0.17,
+   "color": [0.15, 0.25, 0.65]
+  },
+  {
+   "name": "Tongue_Out",
+   "shape": "line",
+   "points": [
+    [-0.07, 2.82],
+    [-0.07, 3.29]
+   ],
+   "thickness": 0.17,
+   "color": [0.15, 0.25, 0.65]
+  },
+  {
+   "name": "Loop",
+   "shape": "loop",
+   "pos": [0.1, 0, 2.35],
+   "radius": 0.28,
+   "width": 0.17,
+   "height": 0.045,
+   "shift": -0.17,
+   "entry": 0.47,
+   "exit": 0.47,
+   "color": [0.15, 0.25, 0.65]
+  },
+  {
+   "name": "Grenzlinie",
+   "shape": "line",
+   "points": [
+    [-0.155, 3.29],
+    [0.015, 3.29]
+   ],
+   "thickness": 0.01,
+   "color": [0.8, 0.08, 0.08]
+  },
+  {
+   "name": "Ablegelinie",
+   "shape": "line",
+   "points": [
+    [-0.25, 5.117],
+    [-0.25, 3.59],
+    [0.25, 3.59],
+    [0.25, 5.117],
+    [0.304, 5.153],
+    [0.354, 5.196],
+    [0.397, 5.246],
+    [0.433, 5.3],
+    [0.462, 5.359],
+    [0.483, 5.421],
+    [0.496, 5.485],
+    [0.5, 5.55],
+    [0.496, 5.615],
+    [0.483, 5.679],
+    [0.462, 5.741],
+    [0.433, 5.8],
+    [0.397, 5.854],
+    [0.354, 5.904],
+    [0.304, 5.947],
+    [0.25, 5.983],
+    [0.191, 6.012],
+    [0.129, 6.033],
+    [0.065, 6.046],
+    [-0.0, 6.05],
+    [-0.065, 6.046],
+    [-0.129, 6.033],
+    [-0.191, 6.012],
+    [-0.25, 5.983],
+    [-0.304, 5.947],
+    [-0.354, 5.904],
+    [-0.397, 5.854],
+    [-0.433, 5.8],
+    [-0.462, 5.741],
+    [-0.483, 5.679],
+    [-0.496, 5.615],
+    [-0.5, 5.55],
+    [-0.496, 5.485],
+    [-0.483, 5.421],
+    [-0.462, 5.359],
+    [-0.433, 5.3],
+    [-0.397, 5.246],
+    [-0.354, 5.196],
+    [-0.304, 5.153],
+    [-0.25, 5.117]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  }
+ ],
+ "circleLine": false
+}

@@ -1,0 +1,126 @@
+// Eternit lane 12 - Stumpfe Kegel.
+// OFFICIAL (NormMiniatur 01/2026 drawing): cone 1 at the lower Bande (+x), its back edge 240-260 cm from the lane start
+//   (using 250); cone 2 at the upper Bande, dimension 300-320 cm (read as its front edge, using 310).
+// MEASURED FROM THE NORM DRAWING (scaled, +-3 cm): each cone is about 58 cm wide at the Bande, 35 cm wide at the free
+//   end and reaches 60-62 cm into the lane.
+// FROM PHOTOS (minigolfbau.eu, Kirchlengern, Rothe part - estimates, +-25 %): each is less than half of a truncated
+//   cone lying across the lane, flat vertical end at the Bande about 19 cm high, free end about 5 cm high.
+// Ablegelinien (painted repositioning lines): from the norm drawing, 20 cm from the Banden and 20/30 cm from the obstacles.
+// Second check against photos (minigolfbau.eu, Kirchlengern, Springe): the cones reach about 0.65-0.71 m across the lane
+//   (using 0.67; the unscaled norm drawing gives 0.62) and are about 15-20 cm high at the Bande (using 17).
+// Mounting flange (photos): a flat strip of about 2.5 cm along the long edges and the small end, painted on.
+{
+ "name": "Eternit 12 Stumpfe Kegel",
+ "system": "Eternit",
+ "length": 6.25,
+ "width": 0.9,
+ "targetCircle": 1.4,
+ "grid": 0.02,
+ "tee": [0, 0.2],
+ "cup": [0, 5.55],
+ "surface": [
+  {
+   "type": "halfcone",
+   "z": 2.21,
+   "a": [0.45, 0.29, 0.17],
+   "b": [-0.22, 0.175, 0.05],
+   "color": [0.85, 0.22, 0.15]
+  },
+  {
+   "type": "halfcone",
+   "z": 3.395,
+   "a": [-0.45, 0.295, 0.17],
+   "b": [0.22, 0.185, 0.05],
+   "color": [0.85, 0.22, 0.15]
+  }
+ ],
+ "parts": [
+  {
+   "name": "Grenzlinie",
+   "shape": "line",
+   "points": [
+    [-0.45, 3.42],
+    [0.45, 3.42]
+   ],
+   "thickness": 0.01,
+   "color": [0.8, 0.08, 0.08]
+  },
+  {
+   "name": "Flange_1",
+   "shape": "line",
+   "points": [
+    [0.45, 1.908],
+    [-0.232, 2.023],
+    [-0.232, 2.397],
+    [0.45, 2.512]
+   ],
+   "thickness": 0.025,
+   "color": [0.85, 0.22, 0.15]
+  },
+  {
+   "name": "Flange_2",
+   "shape": "line",
+   "points": [
+    [-0.45, 3.088],
+    [0.232, 3.198],
+    [0.232, 3.592],
+    [-0.45, 3.702]
+   ],
+   "thickness": 0.025,
+   "color": [0.85, 0.22, 0.15]
+  },
+  {
+   "name": "Ablegelinie",
+   "shape": "line",
+   "points": [
+    [-0.25, 5.117],
+    [-0.25, 3.96],
+    [0.25, 3.86],
+    [0.25, 5.117],
+    [0.304, 5.153],
+    [0.354, 5.196],
+    [0.397, 5.246],
+    [0.433, 5.3],
+    [0.462, 5.359],
+    [0.483, 5.421],
+    [0.496, 5.485],
+    [0.5, 5.55],
+    [0.496, 5.615],
+    [0.483, 5.679],
+    [0.462, 5.741],
+    [0.433, 5.8],
+    [0.397, 5.854],
+    [0.354, 5.904],
+    [0.304, 5.947],
+    [0.25, 5.983],
+    [0.191, 6.012],
+    [0.129, 6.033],
+    [0.065, 6.046],
+    [-0.0, 6.05],
+    [-0.065, 6.046],
+    [-0.129, 6.033],
+    [-0.191, 6.012],
+    [-0.25, 5.983],
+    [-0.304, 5.947],
+    [-0.354, 5.904],
+    [-0.397, 5.854],
+    [-0.433, 5.8],
+    [-0.462, 5.741],
+    [-0.483, 5.679],
+    [-0.496, 5.615],
+    [-0.5, 5.55],
+    [-0.496, 5.485],
+    [-0.483, 5.421],
+    [-0.462, 5.359],
+    [-0.433, 5.3],
+    [-0.397, 5.246],
+    [-0.354, 5.196],
+    [-0.304, 5.153],
+    [-0.25, 5.117]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  }
+ ],
+ "circleLine": false
+}

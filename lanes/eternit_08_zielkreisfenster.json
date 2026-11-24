@@ -1,0 +1,84 @@
+// Eternit lane 8 - Gerade Bahn mit Zielkreisfenster.
+// OFFICIAL (NormMiniatur 01/2026): back edge of the obstacle 500 cm from the lane start; window 10-15 cm wide (using 12.5).
+// FROM PHOTOS (minigolfbau.eu, Harrislee - estimates, only two photos): thin upright sheet across the lane at the circle
+//   entrance, about 12 cm high; the window is cut out at the bottom, about 8 cm high, the sheet continues above it.
+// FROM PHOTOS (minigolfbau.eu): thin sheet running over both Banden with a bent flange at each end and a light trim
+//   around the window.
+// Window 15 cm wide (official 10-15; the minigolfbau.eu photo measures about 15-16).
+{
+ "name": "Eternit 08 Zielkreisfenster",
+ "system": "Eternit",
+ "length": 6.25,
+ "width": 0.9,
+ "targetCircle": 1.4,
+ "tee": [0, 0.2],
+ "cup": [0, 5.55],
+ "parts": [
+  {
+   "name": "Plate_L",
+   "shape": "box",
+   "pos": [-0.2685, 0.06, 4.998],
+   "size": [0.387, 0.12, 0.004],
+   "color": [0.1, 0.35, 0.22]
+  },
+  {
+   "name": "Plate_R",
+   "shape": "box",
+   "pos": [0.2685, 0.06, 4.998],
+   "size": [0.387, 0.12, 0.004],
+   "color": [0.1, 0.35, 0.22]
+  },
+  {
+   "name": "Plate_Top",
+   "shape": "box",
+   "pos": [0, 0.1, 4.998],
+   "size": [0.15, 0.04, 0.004],
+   "color": [0.1, 0.35, 0.22]
+  },
+  {
+   "name": "Flange_L",
+   "shape": "box",
+   "pos": [-0.464, 0.06, 4.978000000000001],
+   "size": [0.004, 0.12, 0.04],
+   "color": [0.1, 0.35, 0.22]
+  },
+  {
+   "name": "Flange_R",
+   "shape": "box",
+   "pos": [0.464, 0.06, 4.978000000000001],
+   "size": [0.004, 0.12, 0.04],
+   "color": [0.1, 0.35, 0.22]
+  },
+  {
+   "name": "Trim_L",
+   "shape": "box",
+   "pos": [-0.079, 0.042, 4.995],
+   "size": [0.008, 0.084, 0.003],
+   "color": [0.88, 0.88, 0.86]
+  },
+  {
+   "name": "Trim_R",
+   "shape": "box",
+   "pos": [0.079, 0.042, 4.995],
+   "size": [0.008, 0.084, 0.003],
+   "color": [0.88, 0.88, 0.86]
+  },
+  {
+   "name": "Trim_Top",
+   "shape": "box",
+   "pos": [0, 0.084, 4.995],
+   "size": [0.166, 0.008, 0.003],
+   "color": [0.88, 0.88, 0.86]
+  },
+  {
+   "name": "Grenzlinie",
+   "shape": "line",
+   "points": [
+    [-0.075, 4.985],
+    [0.075, 4.985]
+   ],
+   "thickness": 0.01,
+   "color": [0.8, 0.08, 0.08]
+  }
+ ]
+}

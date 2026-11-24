@@ -1,0 +1,106 @@
+// Eternit lane 1 - Pyramiden.
+// OFFICIAL (NormMiniatur 01/2026 drawing, dimensions in cm; lower edge of the drawing = +x = player's right):
+//   P1: tip towards the tee at 96, 48 from the right Bande; its other low corner 37 from the right Bande.
+//   P2: tip towards the tee at 242, 30 from the right Bande; 12 cm gap between its far corner and the right Bande.
+//   P3: corner nearest the hole at 506, 44 from the right Bande; another corner 38 from the right Bande; 6-10 cm gap to
+//   the left Bande. Grenzlinien (painted): from the left Bande to P2 and from P2 to the right Bande.
+// MEASURED FROM THE NORM DRAWING (scaled, +-4 cm): the remaining corner positions.
+// FROM PHOTOS (minigolfbau.eu - estimate, low confidence): solid pyramids with a flat top, about 30-35 cm high
+//   (using 32). Some courses use low open steel triangles of Bande height instead.
+// Ablegelinien (painted repositioning lines): from the norm drawing, 20 cm from the Banden and 20/30 cm from the obstacles. Lane 1: the field between P2 and P3 ends in the 20 cm sector around P3 (sector B); the circle line keeps 20 cm from P3.
+// Ablegelinien (painted repositioning lines): from the norm drawing, 20 cm from the Banden and 20/30 cm from the obstacles. Lane 1: only the field between P2 and P3; the lines around P3 are not drawn.
+{
+ "name": "Eternit 01 Pyramiden",
+ "system": "Eternit",
+ "length": 6.25,
+ "width": 0.9,
+ "targetCircle": 1.4,
+ "tee": [0, 0.2],
+ "cup": [0, 5.55],
+ "parts": [
+  {
+   "name": "P1",
+   "shape": "frustum",
+   "points": [
+    [-0.03, 0.96],
+    [-0.35, 1.17],
+    [-0.38, 1.29],
+    [0.08, 1.4]
+   ],
+   "top": [
+    [-0.131, 1.136],
+    [-0.22, 1.195],
+    [-0.229, 1.229],
+    [-0.1, 1.26]
+   ],
+   "height": 0.32,
+   "color": [0.15, 0.3, 0.7]
+  },
+  {
+   "name": "P2",
+   "shape": "frustum",
+   "points": [
+    [0.15, 2.42],
+    [-0.15, 2.77],
+    [0.33, 2.84]
+   ],
+   "top": [
+    [0.121, 2.605],
+    [0.037, 2.703],
+    [0.172, 2.722]
+   ],
+   "height": 0.32,
+   "color": [0.8, 0.15, 0.12]
+  },
+  {
+   "name": "P3",
+   "shape": "frustum",
+   "points": [
+    [0.07, 4.6],
+    [-0.37, 4.75],
+    [0.01, 5.06]
+   ],
+   "top": [
+    [-0.05, 4.746],
+    [-0.173, 4.788],
+    [-0.067, 4.875]
+   ],
+   "height": 0.32,
+   "color": [0.9, 0.75, 0.1]
+  },
+  {
+   "name": "Grenzlinie_upper",
+   "shape": "line",
+   "points": [
+    [-0.45, 2.77],
+    [-0.15, 2.77]
+   ],
+   "thickness": 0.01,
+   "color": [0.8, 0.08, 0.08]
+  },
+  {
+   "name": "Grenzlinie_lower",
+   "shape": "line",
+   "points": [
+    [0.33, 2.84],
+    [0.45, 2.84]
+   ],
+   "thickness": 0.01,
+   "color": [0.8, 0.08, 0.08]
+  },
+  {
+   "name": "Ablegelinie",
+   "shape": "line",
+   "points": [
+    [-0.25, 3.03],
+    [-0.25, 4.53],
+    [0.25, 4.4],
+    [0.25, 3.1],
+    [-0.25, 3.03]
+   ],
+   "thickness": 0.006,
+   "color": [0.13, 0.13, 0.14]
+  }
+ ],
+ "circleLine": false
+}

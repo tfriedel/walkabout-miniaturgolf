@@ -1,0 +1,49 @@
+// Eternit lane 17 - V-Hindernis.
+// OFFICIAL (NormMiniatur 01/2026 drawing): the lane rises from 60-100 cm (using 80) to its end; the V stands in the
+//   target circle with its point towards the tee and opens towards the far end; the hole is at the point; mouth at
+//   most 75 cm wide (using 66), depth 20-40 cm (using 31), gap at the point 0-10 cm (using 10); no Grenzlinie. The
+//   ball is played past the V and rolls back into it. Alternative 1: straight bars (used here).
+// MEASURED FROM THE NORM DRAWING (side view scaled with the plan): the end of the lane is about 40 cm higher.
+// FROM PHOTOS (minigolfbau.eu - estimate): bars about 5 cm high.
+{
+ "name": "Eternit 17 V-Hindernis",
+ "system": "Eternit",
+ "length": 6.25,
+ "width": 0.9,
+ "targetCircle": 1.4,
+ "tee": [0, 0.2],
+ "cup": [0, 5.6],
+ "circleLine": false,
+ "surface": [
+  {
+   "type": "slope",
+   "z0": 0.8,
+   "z1": 6.25,
+   "height": 0.4
+  }
+ ],
+ "parts": [
+  {
+   "name": "V_Left",
+   "shape": "wall",
+   "points": [
+    [-0.05, 5.615],
+    [-0.33, 5.92]
+   ],
+   "height": 0.05,
+   "thickness": 0.008,
+   "color": [0.3, 0.8, 0.2]
+  },
+  {
+   "name": "V_Right",
+   "shape": "wall",
+   "points": [
+    [0.05, 5.615],
+    [0.33, 5.92]
+   ],
+   "height": 0.05,
+   "thickness": 0.008,
+   "color": [0.3, 0.8, 0.2]
+  }
+ ]
+}

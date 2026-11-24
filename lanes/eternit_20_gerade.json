@@ -1,0 +1,11 @@
+// Eternit (Miniaturgolf) lane 20 - Gerade Bahn ohne Hindernisse. Source: NormMiniatur 01/2026.
+// Official: 6.25 x 0.90 m, target circle d=1.40 at the end, tee area 40 x 50 cm at the start.
+// Estimates: hole centred in circle; Bande height 6 cm (not specified in the norm); tee point = centre of tee area.
+{
+  "name": "Eternit 20 Gerade Bahn",
+  "system": "Eternit",
+  "length": 6.25, "width": 0.90, "targetCircle": 1.40,
+  "tee": [0, 0.20],
+  "cup": [0, 5.55],
+  "parts": []
+}
