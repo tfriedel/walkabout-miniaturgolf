@@ -57,3 +57,7 @@ Builds against the game's BepInEx interop assemblies (set the environment variab
 | F6 | hit method |
 | C | desktop camera on/off |
 | H | HUD |
+
+## Licence
+
+MIT, see `LICENSE`. This covers the code and lane files in this repository. The reference photos and norm drawings shown on the making-of page belong to their owners and are not covered.

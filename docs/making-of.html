@@ -32,6 +32,9 @@ figcaption{padding:9px 13px;font-size:14.5px;color:var(--muted);line-height:1.45
 table{border-collapse:collapse;margin:14px 0;max-width:46em;width:100%;font-size:15.5px}
 td,th{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
 th{color:var(--muted);font-weight:600}
+a{color:var(--accent)}
+.src{margin:16px 0 0}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:9px 18px;border-radius:8px}
 footer{margin-top:60px;color:var(--muted);font-size:14.5px;border-top:1px solid var(--line);padding-top:16px}
 @media (max-width:720px){.row.n2,.row.n3{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}body{font-size:16px}}
 </style></head><body>
@@ -41,6 +44,7 @@ footer{margin-top:60px;color:var(--muted);font-size:14.5px;border-top:1px solid 
 <h1>I built a real-world minigolf course inside Walkabout Mini Golf</h1>
 <p class="lead">All 18 lanes of German tournament “Miniaturgolf”, at real size, playable in VR, so I can practise at home for the concrete-and-Eternit courses you find in every German town.</p>
 <ul class="chips"><li>18 standard lanes, 6.25 m × 0.90 m</li><li>dimensions from the official norm drawings</li><li>runs in VR on a Quest 3 via PC</li><li>built in about two days with an AI coding agent</li></ul>
+<p class="src"><a class="btn" href="https://github.com/tfriedel/walkabout-miniaturgolf">Source code on GitHub</a></p>
 </div>
 </header>
 <main>
@@ -49,7 +53,7 @@ footer{margin-top:60px;color:var(--muted);font-size:14.5px;border-top:1px solid 
 <p>In Germany, Austria, Switzerland and Scandinavia, minigolf is a real sport with standardised lanes. The most common system is <b>Miniaturgolf</b> (often called “Eternit” after the fibre-cement the lanes are made of): 18 lanes, each 6.25 m long and 90 cm wide, each with one of a fixed catalogue of obstacles. Because the lanes are standardised, a line you learn on one course works on every other course.</p>
 <p>That makes it a perfect thing to practise in VR. So this is a mod for the PC version of Walkabout Mini Golf that replaces the scenery of a loaded course with a small city-garden minigolf course and puts the 18 standard lanes on the game's 18 holes. The game's own ball, putter, scoring and hole progression keep working.</p>
 <p>I did not write the code myself. I worked with <b>Claude Code</b>, an AI coding agent: I gave directions, reference photos and corrections; it wrote the mod, drove the game itself (commands, test putts, screenshots) and compared its results against drawings and photos.</p>
-<div class="note"><b>Honest status:</b> every lane is playable and can be holed out, and the lane dimensions follow the official drawings. Several obstacle heights are estimated from photos because the norm does not give them. I have not yet measured how well VR practice transfers to a real course. The mod is not released yet.</div>
+<div class="note"><b>Honest status:</b> every lane is playable and can be holed out, and the lane dimensions follow the official drawings. Several obstacle heights are estimated from photos because the norm does not give them. I have not yet measured how well VR practice transfers to a real course. There is no packaged download yet, but the full source is <a href="https://github.com/tfriedel/walkabout-miniaturgolf">on GitHub</a> (MIT licence) if you want to build it yourself.</div>
 
 <h2><span class="n">1</span>Getting into the game</h2>
 <p>Walkabout is a Unity game compiled with IL2CPP, so there is no script source to edit. The way in is a mod loader (<b>BepInEx 6</b>) that runs your own C# plugin inside the game, plus <b>UnityExplorer</b> to look at the game's objects while it runs.</p>
@@ -125,6 +129,7 @@ footer{margin-top:60px;color:var(--muted);font-size:14.5px;border-top:1px solid 
 <p>So: good for learning the lanes and their lines, not yet proven for pace. Comparing a session at home with a session on a real course is the next step.</p>
 
 <h2>If you want to try something like this</h2>
+<p>Everything described here is in the repository: <a href="https://github.com/tfriedel/walkabout-miniaturgolf">github.com/tfriedel/walkabout-miniaturgolf</a>. It contains the plugin, the 18 lane files, the mesh generators and the test tools.</p>
 <ul>
 <li>You need the PC version of the game and a mod loader for IL2CPP Unity games (BepInEx 6).</li>
 <li>Start with a desktop camera and a scripted putt. Being able to test without putting the headset on saves hours.</li>
@@ -134,6 +139,7 @@ footer{margin-top:60px;color:var(--muted);font-size:14.5px;border-top:1px solid 
 </ul>
 
 <footer>
+<p>Source code: <a href="https://github.com/tfriedel/walkabout-miniaturgolf">github.com/tfriedel/walkabout-miniaturgolf</a> (MIT licence).</p>
 <p>Norm drawings: official Miniaturgolf system norm sheets. Reference photos of Hertzberg Golf: hertzberg-golf.de. Everything else: screenshots of the mod running in Walkabout Mini Golf.</p>
 <p>This is an unofficial fan project and is not affiliated with Mighty Coconut or Hertzberg Golf.</p>
 </footer>
